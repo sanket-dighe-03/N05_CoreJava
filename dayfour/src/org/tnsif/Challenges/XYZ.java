@@ -12,11 +12,23 @@ package org.tnsif.Challenges;
  *   The task is to choose the person in initial circle is servived
   
  */
-
+import java.util.Scanner;
 public class XYZ {
-
+	
+	Static int Survive(int n,int k)
+	{
+		if(n==1)
+	return 1;
+	else
+		 return (Survive(n-1,k)+k-1)%n+1;
+	}
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		Scanner S=new Scanner(System.in);
+		int n=S.nextInt();
+		int k=S.nextInt();
+		System.out.println(Survive(n,k));
+				
 
 	}
 
