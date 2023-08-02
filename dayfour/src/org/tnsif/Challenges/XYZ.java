@@ -15,7 +15,7 @@ package org.tnsif.Challenges;
 import java.util.Scanner;
 public class XYZ {
 	
-	Static int Survive(int n,int k)
+	static int Survive(int n,int k)
 	{
 		if(n==1)
 	return 1;
