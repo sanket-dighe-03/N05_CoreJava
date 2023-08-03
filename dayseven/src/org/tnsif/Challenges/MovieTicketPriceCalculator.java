@@ -8,11 +8,11 @@ public class MovieTicketPriceCalculator {
 		System.out.println("Enter your age");
 		int age=S.nextInt();
 		System.out.println("Enter the timing in 24 hours format");
-		int time=S.nextInt();
+		float time=S.nextFloat();
 		double TicketPrice;
 		if(age>13)
 		{
-			if(time==10.15 || time==13.30)
+			if(time==10.15 || time==13.30||time==18.00||time==22.00)
 			{
 				TicketPrice=5.00;
 			}
@@ -21,13 +21,13 @@ public class MovieTicketPriceCalculator {
 			}
 		}
 			else {
-				if(time==10.15||time==13.30)
+				if(time==10.15||time==13.30||time==18.00||time==22.00)
 				{
-					TicketPrice=5.00;
+					TicketPrice=2.00;
 				}
 				else
 				{
-					TicketPrice=8.00;
+					TicketPrice=4.00;
 			}
 		}
 		System.out.println("Ticket price"+TicketPrice);
