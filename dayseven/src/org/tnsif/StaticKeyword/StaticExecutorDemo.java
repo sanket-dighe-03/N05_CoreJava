@@ -6,6 +6,7 @@ public class StaticExecutorDemo {
 		// TODO Auto-generated method stub
 		Tiger t=new Tiger();
 		t.eat();
+		//we cant ovveride static method 
 		t.run();
 	}
 
